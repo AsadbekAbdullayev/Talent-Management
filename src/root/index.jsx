@@ -3,12 +3,20 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-import Navbar from '../component/layout/Navbar';
+import View from '../component/layout/View'
+import SignUp from '../component/SignUp'
+import Register from '../component/Register'
+import Generic from '../component/layout/Generic';
 function Root() {
   return (
 
 <Routes>
-      <Route path="/" element={<Navbar />}/>
+      <Route path="/" element={<View />}>
+      <Route path="/signUp" element={<SignUp />}/>
+      <Route path="/register" element={<Register />}/>
+      <Route path="/login" element={<Generic />}/>
+
+      </Route>
     </Routes>
   );
 }

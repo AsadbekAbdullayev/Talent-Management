@@ -1,7 +1,8 @@
 import React from 'react'
 import {Wrapper} from './style';
 
-const Button = ({children,color,bg,br,border,width,height}) => {
+const Button = ({children,color,bg,br,border,width,height,onClick}) => {
+ 
   return (
     <Wrapper
      color={color} 
@@ -9,7 +10,9 @@ const Button = ({children,color,bg,br,border,width,height}) => {
      br={br} 
      border={border} 
      width={width}
-     height={height}>
+     height={height}
+     onClick={onClick}
+     >
       <Wrapper.Title>
 
       {children || 'text'}
