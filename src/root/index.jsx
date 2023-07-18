@@ -7,6 +7,7 @@ import View from '../component/layout/View'
 import SignUp from '../component/SignUp'
 import Register from '../component/Register'
 import Generic from '../component/layout/Generic';
+// test
 function Root() {
   return (
 
